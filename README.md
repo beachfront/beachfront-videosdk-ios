@@ -2,7 +2,7 @@
 
 ## Overview
 This document details the process of integrating the BeachfrontBuilder SDK with your iOS application. 
-:
+
 ## Requirements
 
 * BeachFrontBuilder App Key & App Build ID - [Get it from here](http://beachfrontbuilder.com/signup)
