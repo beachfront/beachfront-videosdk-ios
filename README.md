@@ -1,4 +1,4 @@
-## BeachFrontBuilder iOS SDK usage guide
+## BeachFrontBuilder iOS SDK Usage Guide
 
 ## Overview
 This document details the process of integrating the BeachfrontBuilder SDK with your iOS application. 
