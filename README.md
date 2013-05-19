@@ -24,17 +24,25 @@ This document details the process of integrating the BeachfrontBuilder SDK with 
 	- MobileCoreServices.framework
 	- SystemConfiguration.framework
 	- QuartzCore.framework
-	
-5. Make sure that the BeachFrontBuilderSDK.bundle is included in the "Copy Bundle Resources" panel.
 
-6. In your prefix header file <PRODUCT-NAME>-prefix.pch, import the framework header.You can also just import the framework header wherever you need it, but we recommend you do it this way.
+5. In your Build Settings add the flag "-ObjC" to your "Other Linker Flags" entry.
+
+6. Make sure that the BeachFrontBuilderSDK.bundle is included in the "Copy Bundle Resources" panel.
+
+7. In your app delegate import the framework header and initialize the SDK in your application:didFinishLaunchingWithOptions: method
 
 ```
-#ifdef __OBJC__
-..
-..
 #import <BeachFrontBuilderSDK/BeachFrontBuilderSDK.h>
-#endif
+..
+..
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{	
+	..
+	..
+    //Initialize BeachFrontBuilderSDK
+    [BeachFrontBuilderSDK startWithAppKey:<YOUR-APP-KEY-HERE> appBuildID:<YOUR-APP-BUILD-ID-HERE>];
+    ..
+    ..
+}
 ```
-
 Have a bug? Please [create an issue on GitHub](https://github.com/beachfront/BeachFrontBuilder-iOS-SDK/issues)!
