@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B66447331749406C00524214 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B66447321749406C00524214 /* UIKit.framework */; };
+		B66447351749406C00524214 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B66447341749406C00524214 /* Foundation.framework */; };
+		B66447371749406C00524214 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B66447361749406C00524214 /* CoreGraphics.framework */; };
+		B664473D1749406C00524214 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B664473B1749406C00524214 /* InfoPlist.strings */; };
+		B664473F1749406C00524214 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B664473E1749406C00524214 /* main.m */; };
+		B66447431749406C00524214 /* BFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B66447421749406C00524214 /* BFAppDelegate.m */; };
+		B66447451749406C00524214 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B66447441749406C00524214 /* Default.png */; };
+		B66447471749406C00524214 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B66447461749406C00524214 /* Default@2x.png */; };
+		B66447491749406C00524214 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B66447481749406C00524214 /* Default-568h@2x.png */; };
+		B664474C1749406C00524214 /* BFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B664474B1749406C00524214 /* BFViewController.m */; };
+		B664474F1749406C00524214 /* BFViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = B664474D1749406C00524214 /* BFViewController_iPhone.xib */; };
+		B66447521749406C00524214 /* BFViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B66447501749406C00524214 /* BFViewController_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B664472F1749406C00524214 /* BeachFrontBuilderSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeachFrontBuilderSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B66447321749406C00524214 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B66447341749406C00524214 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B66447361749406C00524214 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B664473A1749406C00524214 /* BeachFrontBuilderSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BeachFrontBuilderSample-Info.plist"; sourceTree = "<group>"; };
+		B664473C1749406C00524214 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B664473E1749406C00524214 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B66447401749406C00524214 /* BeachFrontBuilderSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BeachFrontBuilderSample-Prefix.pch"; sourceTree = "<group>"; };
+		B66447411749406C00524214 /* BFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFAppDelegate.h; sourceTree = "<group>"; };
+		B66447421749406C00524214 /* BFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFAppDelegate.m; sourceTree = "<group>"; };
+		B66447441749406C00524214 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B66447461749406C00524214 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B66447481749406C00524214 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B664474A1749406C00524214 /* BFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFViewController.h; sourceTree = "<group>"; };
+		B664474B1749406C00524214 /* BFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFViewController.m; sourceTree = "<group>"; };
+		B664474E1749406C00524214 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BFViewController_iPhone.xib; sourceTree = "<group>"; };
+		B66447511749406C00524214 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BFViewController_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B664472C1749406C00524214 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B66447331749406C00524214 /* UIKit.framework in Frameworks */,
+				B66447351749406C00524214 /* Foundation.framework in Frameworks */,
+				B66447371749406C00524214 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B66447261749406C00524214 = {
+			isa = PBXGroup;
+			children = (
+				B66447381749406C00524214 /* BeachFrontBuilderSample */,
+				B66447311749406C00524214 /* Frameworks */,
+				B66447301749406C00524214 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B66447301749406C00524214 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B664472F1749406C00524214 /* BeachFrontBuilderSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B66447311749406C00524214 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B66447321749406C00524214 /* UIKit.framework */,
+				B66447341749406C00524214 /* Foundation.framework */,
+				B66447361749406C00524214 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B66447381749406C00524214 /* BeachFrontBuilderSample */ = {
+			isa = PBXGroup;
+			children = (
+				B66447411749406C00524214 /* BFAppDelegate.h */,
+				B66447421749406C00524214 /* BFAppDelegate.m */,
+				B664474A1749406C00524214 /* BFViewController.h */,
+				B664474B1749406C00524214 /* BFViewController.m */,
+				B664474D1749406C00524214 /* BFViewController_iPhone.xib */,
+				B66447501749406C00524214 /* BFViewController_iPad.xib */,
+				B66447391749406C00524214 /* Supporting Files */,
+			);
+			path = BeachFrontBuilderSample;
+			sourceTree = "<group>";
+		};
+		B66447391749406C00524214 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B664473A1749406C00524214 /* BeachFrontBuilderSample-Info.plist */,
+				B664473B1749406C00524214 /* InfoPlist.strings */,
+				B664473E1749406C00524214 /* main.m */,
+				B66447401749406C00524214 /* BeachFrontBuilderSample-Prefix.pch */,
+				B66447441749406C00524214 /* Default.png */,
+				B66447461749406C00524214 /* Default@2x.png */,
+				B66447481749406C00524214 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B664472E1749406C00524214 /* BeachFrontBuilderSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B66447551749406C00524214 /* Build configuration list for PBXNativeTarget "BeachFrontBuilderSample" */;
+			buildPhases = (
+				B664472B1749406C00524214 /* Sources */,
+				B664472C1749406C00524214 /* Frameworks */,
+				B664472D1749406C00524214 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeachFrontBuilderSample;
+			productName = BeachFrontBuilderSample;
+			productReference = B664472F1749406C00524214 /* BeachFrontBuilderSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B66447271749406C00524214 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BF;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Beachfront Media LLC";
+			};
+			buildConfigurationList = B664472A1749406C00524214 /* Build configuration list for PBXProject "BeachFrontBuilderSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B66447261749406C00524214;
+			productRefGroup = B66447301749406C00524214 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B664472E1749406C00524214 /* BeachFrontBuilderSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B664472D1749406C00524214 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B664473D1749406C00524214 /* InfoPlist.strings in Resources */,
+				B66447451749406C00524214 /* Default.png in Resources */,
+				B66447471749406C00524214 /* Default@2x.png in Resources */,
+				B66447491749406C00524214 /* Default-568h@2x.png in Resources */,
+				B664474F1749406C00524214 /* BFViewController_iPhone.xib in Resources */,
+				B66447521749406C00524214 /* BFViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B664472B1749406C00524214 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B664473F1749406C00524214 /* main.m in Sources */,
+				B66447431749406C00524214 /* BFAppDelegate.m in Sources */,
+				B664474C1749406C00524214 /* BFViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B664473B1749406C00524214 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B664473C1749406C00524214 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B664474D1749406C00524214 /* BFViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B664474E1749406C00524214 /* en */,
+			);
+			name = BFViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		B66447501749406C00524214 /* BFViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B66447511749406C00524214 /* en */,
+			);
+			name = BFViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B66447531749406C00524214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B66447541749406C00524214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B66447561749406C00524214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BeachFrontBuilderSample/BeachFrontBuilderSample-Prefix.pch";
+				INFOPLIST_FILE = "BeachFrontBuilderSample/BeachFrontBuilderSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B66447571749406C00524214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BeachFrontBuilderSample/BeachFrontBuilderSample-Prefix.pch";
+				INFOPLIST_FILE = "BeachFrontBuilderSample/BeachFrontBuilderSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B664472A1749406C00524214 /* Build configuration list for PBXProject "BeachFrontBuilderSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B66447531749406C00524214 /* Debug */,
+				B66447541749406C00524214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B66447551749406C00524214 /* Build configuration list for PBXNativeTarget "BeachFrontBuilderSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B66447561749406C00524214 /* Debug */,
+				B66447571749406C00524214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B66447271749406C00524214 /* Project object */;
+}

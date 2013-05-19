@@ -1,18 +1,18 @@
-## Beachfront iOS SDK usage guide
+## BeachfrontBuilder iOS SDK usage guide
 
 ## Overview
-This document details the process of integrating the Beachfront AD SDK with your iOS application. 
-
+This document details the process of integrating the BeachfrontBuilder SDK with your iOS application. 
+:
 ## Requirements
 
-* BeachFront IO app id & Ad Unit id - [Get it from here](http://beachfront.io/join)
-* BeachFront IO SDK Framework
+* BeachFrontBuild App Key & App Build ID - [Get it from here](http://beachfrontbuilder.com/signup)
+* BeachFrontBuilder SDK EmbeddedFramework
 * Xcode 4.5 or higher
 
 ## Installation
-1. Access the beachfront.io Console and register your application to get your App ID & Ad unit Id.
-2. Download the BeachFront iOS SDK Embedded Framwork and copy it into your project Folder.
-3. Add the BFIOSDK.embeddedFramework to your project and include BFIOSDK.framework in the "Link Binary with Libraries" panel in the project "Build Phases" section.
+1. Access the BeachFrontBuilderSDK Console and get your App Key & App Build ID.
+2. Download the BeachFrontBuilder iOS SDK Embedded Framwork and copy it into your project Folder.
+3. Add the BeachFrontBuilderSDK.embeddedFramework to your project and include BeachFrontBuilderSDK.framework in the "Link Binary with Libraries" panel in the project "Build Phases" section.
 4. Also add Foundation.framework, CoreGraphics.framework, MediaPlayer.framework and UIKit.framework by clicking on the + button in the "Link Binary With Libraries" panel.
   
 5. Wherever you want to show a beachfront-io advertisement, import the framework header.
