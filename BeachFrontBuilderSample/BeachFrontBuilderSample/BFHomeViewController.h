@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <BeachFrontBuilderSDK/BeachFrontBuilderSDK.h>
 
-@interface BFHomeViewController : UIViewController
-
+@interface BFHomeViewController : UITableViewController <UISplitViewControllerDelegate>
+@property (strong, nonatomic) BFChannelViewController *detailViewController;
+@property (strong, nonatomic) UIPopoverController* masterPopoverController;
 @end
+

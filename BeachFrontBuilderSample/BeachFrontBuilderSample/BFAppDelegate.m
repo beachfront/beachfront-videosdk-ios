@@ -7,22 +7,43 @@
 //
 
 #import "BFAppDelegate.h"
-
 #import "BFHomeViewController.h"
+
+//BeachFrontBuilderSDK
+#import <BeachFrontBuilderSDK/BeachFrontBuilderSDK.h>
+
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 @implementation BFAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    //Initialize BeachFrontBuilderSDK
+    [BeachFrontBuilderSDK startWithAppKey:@"5be86205-ebf8-4cd5-82cd-cf2a5a603be0" appBuildID:@"1"];
+    
+    //Style the UI
+    [self styleUI];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.viewController =
-        [[BFHomeViewController alloc] initWithNibName:@"BFHomeViewController_iPhone" bundle:nil];
+        BFHomeViewController *masterViewController = [[BFHomeViewController alloc] initWithNibName:@"BFHomeViewController_iPhone" bundle:nil];
+        self.navigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
+        self.window.rootViewController = self.navigationController;
     } else {
-        self.viewController = [[BFHomeViewController alloc] initWithNibName:@"BFHomeViewController_iPad" bundle:nil];
+        BFHomeViewController *masterViewController = [[BFHomeViewController alloc] initWithNibName:@"BFHomeViewController_iPad" bundle:nil];
+        UINavigationController *masterNavigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
+        
+        BFChannelViewController *detailViewController = [[BFChannelViewController alloc] initAsMeFeediaChannel];
+        UINavigationController *detailNavigationController = [[UINavigationController alloc] initWithRootViewController:detailViewController];
+    	masterViewController.detailViewController = detailViewController;
+    	
+        self.splitViewController = [[UISplitViewController alloc] init];
+        self.splitViewController.delegate = masterViewController;
+        self.splitViewController.viewControllers = @[masterNavigationController, detailNavigationController];
+        
+        self.window.rootViewController = self.splitViewController;
     }
-    self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -35,7 +56,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
@@ -53,5 +74,14 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+#pragma mark
+#pragma mark Private
+
+-(void)styleUI{
+    [[UINavigationBar appearance] setTintColor:UIColorFromRGB(0x6944a1)];
+    [[UISearchBar appearance] setTintColor:UIColorFromRGB(0x6944a1)];
+}
+
 
 @end

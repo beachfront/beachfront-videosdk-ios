@@ -8,12 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@class BFHomeViewController;
-
 @interface BFAppDelegate : UIResponder <UIApplicationDelegate>
-
 @property (strong, nonatomic) UIWindow *window;
-
-@property (strong, nonatomic) BFHomeViewController *viewController;
-
+@property (strong, nonatomic) UINavigationController *navigationController;
+@property (strong, nonatomic) UISplitViewController *splitViewController;
 @end
