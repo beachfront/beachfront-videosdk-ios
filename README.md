@@ -18,16 +18,16 @@ This document details the process of integrating the BeachfrontBuilder SDK with 
 
 4. Also add the following frameworks one by one by clicking on the + button in the "Link Binary With Libraries" panel.
 	
-	- Foundation.framework
-	- UIKit.framework
-	- CoreGraphics.framework
-	- MobileCoreServices.framework
-	- SystemConfiguration.framework
-	- QuartzCore.framework
+	Foundation.framework
+	UIKit.framework
+	CoreGraphics.framework
+	MobileCoreServices.framework
+	SystemConfiguration.framework
+	QuartzCore.framework
 
-5. In your Build Settings add the flag "-ObjC" to your "Other Linker Flags" entry.
+5. Make sure that the BeachFrontBuilderSDK.bundle is included in the "Copy Bundle Resources" panel.
 
-6. Make sure that the BeachFrontBuilderSDK.bundle is included in the "Copy Bundle Resources" panel.
+6. In your Build Settings add the flag "-ObjC" to your "Other Linker Flags" entry.
 
 7. In your app delegate import the framework header and initialize the SDK in your application:didFinishLaunchingWithOptions: method
 
