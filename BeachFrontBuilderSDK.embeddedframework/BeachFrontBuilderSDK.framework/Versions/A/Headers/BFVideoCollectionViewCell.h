@@ -2,7 +2,7 @@
 //  BFVideoCollectionViewCell.h
 //  BeachFrontBuilderSDK
 //
-//  Created by samyzee on 5/3/13.
+//  Created by Sumeru Chatterjee on 5/3/13.
 //  Copyright (c) 2013 Beachfront Media LLC. All rights reserved.
 //
 

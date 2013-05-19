@@ -2,13 +2,13 @@
 //  BFAppDelegate.m
 //  BeachFrontBuilderSample
 //
-//  Created by samyzee on 5/19/13.
+//  Created by Sumeru Chatterjee on 5/19/13.
 //  Copyright (c) 2013 Beachfront Media LLC. All rights reserved.
 //
 
 #import "BFAppDelegate.h"
 
-#import "BFViewController.h"
+#import "BFHomeViewController.h"
 
 @implementation BFAppDelegate
 
@@ -17,9 +17,10 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.viewController = [[BFViewController alloc] initWithNibName:@"BFViewController_iPhone" bundle:nil];
+        self.viewController =
+        [[BFHomeViewController alloc] initWithNibName:@"BFHomeViewController_iPhone" bundle:nil];
     } else {
-        self.viewController = [[BFViewController alloc] initWithNibName:@"BFViewController_iPad" bundle:nil];
+        self.viewController = [[BFHomeViewController alloc] initWithNibName:@"BFHomeViewController_iPad" bundle:nil];
     }
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];

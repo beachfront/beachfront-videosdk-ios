@@ -13,15 +13,15 @@
 		B66447451749406C00524214 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B66447441749406C00524214 /* Default.png */; };
 		B66447471749406C00524214 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B66447461749406C00524214 /* Default@2x.png */; };
 		B66447491749406C00524214 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B66447481749406C00524214 /* Default-568h@2x.png */; };
-		B664474C1749406C00524214 /* BFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B664474B1749406C00524214 /* BFViewController.m */; };
-		B664474F1749406C00524214 /* BFViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = B664474D1749406C00524214 /* BFViewController_iPhone.xib */; };
-		B66447521749406C00524214 /* BFViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B66447501749406C00524214 /* BFViewController_iPad.xib */; };
-		B664475C1749428900524214 /* BeachFrontBuilderSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B66447591749428900524214 /* BeachFrontBuilderSDK.framework */; };
-		B664475D1749428900524214 /* BeachFrontBuilderSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B664475B1749428900524214 /* BeachFrontBuilderSDK.bundle */; };
+		B664474C1749406C00524214 /* BFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B664474B1749406C00524214 /* BFHomeViewController.m */; };
+		B664474F1749406C00524214 /* BFHomeViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = B664474D1749406C00524214 /* BFHomeViewController_iPhone.xib */; };
+		B66447521749406C00524214 /* BFHomeViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B66447501749406C00524214 /* BFHomeViewController_iPad.xib */; };
 		B664475F174942B500524214 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B664475E174942B500524214 /* UIKit.framework */; };
 		B6644761174942BC00524214 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6644760174942BC00524214 /* Foundation.framework */; };
 		B6644763174942C400524214 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6644762174942C400524214 /* CoreGraphics.framework */; };
 		B6644765174942CA00524214 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6644764174942CA00524214 /* MediaPlayer.framework */; };
+		B66447921749478100524214 /* BeachFrontBuilderSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B664478F1749478100524214 /* BeachFrontBuilderSDK.framework */; };
+		B66447931749478100524214 /* BeachFrontBuilderSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B66447911749478100524214 /* BeachFrontBuilderSDK.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,16 +35,16 @@
 		B66447441749406C00524214 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		B66447461749406C00524214 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		B66447481749406C00524214 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		B664474A1749406C00524214 /* BFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFViewController.h; sourceTree = "<group>"; };
-		B664474B1749406C00524214 /* BFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFViewController.m; sourceTree = "<group>"; };
-		B664474E1749406C00524214 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BFViewController_iPhone.xib; sourceTree = "<group>"; };
-		B66447511749406C00524214 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BFViewController_iPad.xib; sourceTree = "<group>"; };
-		B66447591749428900524214 /* BeachFrontBuilderSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BeachFrontBuilderSDK.framework; sourceTree = "<group>"; };
-		B664475B1749428900524214 /* BeachFrontBuilderSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BeachFrontBuilderSDK.bundle; sourceTree = "<group>"; };
+		B664474A1749406C00524214 /* BFHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFHomeViewController.h; sourceTree = "<group>"; };
+		B664474B1749406C00524214 /* BFHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFHomeViewController.m; sourceTree = "<group>"; };
+		B664474E1749406C00524214 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BFHomeViewController_iPhone.xib; sourceTree = "<group>"; };
+		B66447511749406C00524214 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BFHomeViewController_iPad.xib; sourceTree = "<group>"; };
 		B664475E174942B500524214 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B6644760174942BC00524214 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B6644762174942C400524214 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B6644764174942CA00524214 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		B664478F1749478100524214 /* BeachFrontBuilderSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BeachFrontBuilderSDK.framework; sourceTree = "<group>"; };
+		B66447911749478100524214 /* BeachFrontBuilderSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BeachFrontBuilderSDK.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 				B6644763174942C400524214 /* CoreGraphics.framework in Frameworks */,
 				B6644761174942BC00524214 /* Foundation.framework in Frameworks */,
 				B664475F174942B500524214 /* UIKit.framework in Frameworks */,
-				B664475C1749428900524214 /* BeachFrontBuilderSDK.framework in Frameworks */,
+				B66447921749478100524214 /* BeachFrontBuilderSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,10 +66,6 @@
 		B66447261749406C00524214 = {
 			isa = PBXGroup;
 			children = (
-				B6644764174942CA00524214 /* MediaPlayer.framework */,
-				B6644762174942C400524214 /* CoreGraphics.framework */,
-				B6644760174942BC00524214 /* Foundation.framework */,
-				B664475E174942B500524214 /* UIKit.framework */,
 				B66447381749406C00524214 /* BeachFrontBuilderSample */,
 				B66447311749406C00524214 /* Frameworks */,
 				B66447301749406C00524214 /* Products */,
@@ -87,7 +83,11 @@
 		B66447311749406C00524214 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B66447581749428900524214 /* BeachFrontBuilderSDK.embeddedframework */,
+				B664478E1749478100524214 /* BeachFrontBuilderSDK.embeddedframework */,
+				B6644764174942CA00524214 /* MediaPlayer.framework */,
+				B6644762174942C400524214 /* CoreGraphics.framework */,
+				B6644760174942BC00524214 /* Foundation.framework */,
+				B664475E174942B500524214 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -97,10 +97,8 @@
 			children = (
 				B66447411749406C00524214 /* BFAppDelegate.h */,
 				B66447421749406C00524214 /* BFAppDelegate.m */,
-				B664474A1749406C00524214 /* BFViewController.h */,
-				B664474B1749406C00524214 /* BFViewController.m */,
-				B664474D1749406C00524214 /* BFViewController_iPhone.xib */,
-				B66447501749406C00524214 /* BFViewController_iPad.xib */,
+				B664474A1749406C00524214 /* BFHomeViewController.h */,
+				B664474B1749406C00524214 /* BFHomeViewController.m */,
 				B66447391749406C00524214 /* Supporting Files */,
 			);
 			path = BeachFrontBuilderSample;
@@ -109,6 +107,8 @@
 		B66447391749406C00524214 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B664474D1749406C00524214 /* BFHomeViewController_iPhone.xib */,
+				B66447501749406C00524214 /* BFHomeViewController_iPad.xib */,
 				B664473A1749406C00524214 /* BeachFrontBuilderSample-Info.plist */,
 				B664473B1749406C00524214 /* InfoPlist.strings */,
 				B664473E1749406C00524214 /* main.m */,
@@ -120,20 +120,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B66447581749428900524214 /* BeachFrontBuilderSDK.embeddedframework */ = {
+		B664478E1749478100524214 /* BeachFrontBuilderSDK.embeddedframework */ = {
 			isa = PBXGroup;
 			children = (
-				B66447591749428900524214 /* BeachFrontBuilderSDK.framework */,
-				B664475A1749428900524214 /* Resources */,
+				B664478F1749478100524214 /* BeachFrontBuilderSDK.framework */,
+				B66447901749478100524214 /* Resources */,
 			);
 			name = BeachFrontBuilderSDK.embeddedframework;
 			path = ../BeachFrontBuilderSDK.embeddedframework;
 			sourceTree = "<group>";
 		};
-		B664475A1749428900524214 /* Resources */ = {
+		B66447901749478100524214 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B664475B1749428900524214 /* BeachFrontBuilderSDK.bundle */,
+				B66447911749478100524214 /* BeachFrontBuilderSDK.bundle */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -194,9 +194,9 @@
 				B66447451749406C00524214 /* Default.png in Resources */,
 				B66447471749406C00524214 /* Default@2x.png in Resources */,
 				B66447491749406C00524214 /* Default-568h@2x.png in Resources */,
-				B664474F1749406C00524214 /* BFViewController_iPhone.xib in Resources */,
-				B66447521749406C00524214 /* BFViewController_iPad.xib in Resources */,
-				B664475D1749428900524214 /* BeachFrontBuilderSDK.bundle in Resources */,
+				B664474F1749406C00524214 /* BFHomeViewController_iPhone.xib in Resources */,
+				B66447521749406C00524214 /* BFHomeViewController_iPad.xib in Resources */,
+				B66447931749478100524214 /* BeachFrontBuilderSDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,7 +209,7 @@
 			files = (
 				B664473F1749406C00524214 /* main.m in Sources */,
 				B66447431749406C00524214 /* BFAppDelegate.m in Sources */,
-				B664474C1749406C00524214 /* BFViewController.m in Sources */,
+				B664474C1749406C00524214 /* BFHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,20 +224,20 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		B664474D1749406C00524214 /* BFViewController_iPhone.xib */ = {
+		B664474D1749406C00524214 /* BFHomeViewController_iPhone.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B664474E1749406C00524214 /* en */,
 			);
-			name = BFViewController_iPhone.xib;
+			name = BFHomeViewController_iPhone.xib;
 			sourceTree = "<group>";
 		};
-		B66447501749406C00524214 /* BFViewController_iPad.xib */ = {
+		B66447501749406C00524214 /* BFHomeViewController_iPad.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B66447511749406C00524214 /* en */,
 			);
-			name = BFViewController_iPad.xib;
+			name = BFHomeViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

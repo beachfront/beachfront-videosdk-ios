@@ -2,7 +2,7 @@
 //  main.m
 //  BeachFrontBuilderSample
 //
-//  Created by samyzee on 5/19/13.
+//  Created by Sumeru Chatterjee on 5/19/13.
 //  Copyright (c) 2013 Beachfront Media LLC. All rights reserved.
 //
 
