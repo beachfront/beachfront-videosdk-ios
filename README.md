@@ -14,58 +14,13 @@ This document details the process of integrating the BeachfrontBuilder SDK with 
 2. Download the BeachFrontBuilder iOS SDK Embedded Framwork and copy it into your project Folder.
 3. Add the BeachFrontBuilderSDK.embeddedFramework to your project and include BeachFrontBuilderSDK.framework in the "Link Binary with Libraries" panel in the project "Build Phases" section.
 4. Also add Foundation.framework, CoreGraphics.framework, MediaPlayer.framework and UIKit.framework by clicking on the + button in the "Link Binary With Libraries" panel.
-  
-5. Wherever you want to show a beachfront-io advertisement, import the framework header.
+5. Make sure that the BeachFrontBuilderSDK.bundle is included in the "Copy Bundle Resources" panel.
+6. In your prefix header file App-prefix.pch, import the framework header.You can also just import the framework header wherever you need it, but we recommend you do it this way.
 ```
-#import <BFIOSDK/BFIOSDK.h>
+#ifdef __OBJC__
+..
+..
+#import <BeachFrontBuilderSDK/BeachFrontBuilderSDK.h>
+#endif
 ```
-
-6. To show the advertisement simply make a call to the (showAdWithAppID:adUnitID) method
-```
-- (void)yourMethod {
-	...
-	...
-    
-    [BFIOSDK showAdWithAppID:<YOUR APPID HERE> adUnitID:<YOUR ADUNITID HERE>];
-    
-    ...
-    ...
-}
-```
-7. Optionally register for notifications to get notified about bfio ad events. The four available notifications are
-
-	BFAdInterstitialOpenedNotification 		- Fired when an ad interstitial view is opened
-
-	BFAdInterstitialStartedNotification 	- Fired when an ad video starts playing.
-
-	BFAdInterstitialCompleteNotification 	- Fired when an ad video is completed.
-
-	BFAdInterstitialClosedNotification      - Fired when an ad interstitial view is closed.
-
-```	
-	...
-  
-    [[NSNotificationCenter defaultCenter]   addObserver:self
-                                               selector:@selector(interstitialOpened:)
-                                                   name:BFAdInterstitialOpenedNotification
-                                                 object:nil];
-    
-    [[NSNotificationCenter defaultCenter]addObserver:self
-                                            selector:@selector(interstitialClosed:)
-                                                name:BFAdInterstitialClosedNotification
-                                              object:nil];
-    
-    [[NSNotificationCenter defaultCenter]   addObserver:self
-                                               selector:@selector(interstitialStarted:)
-                                                   name:BFAdInterstitialStartedNotification
-                                                 object:nil];
-    
-    [[NSNotificationCenter defaultCenter]   addObserver:self
-                                               selector:@selector(interstitialComplete:)
-                                                   name:BFAdInterstitialCompleteNotification
-                                                 object:nil];
-   ...
-
-```
-
-Have a bug? Please [create an issue on GitHub](https://github.com/beachfront/beachfront-io-ios-sdk/issues)!
+Have a bug? Please [create an issue on GitHub](https://github.com/beachfront/BeachFrontBuilder-iOS-SDK/issues)!
