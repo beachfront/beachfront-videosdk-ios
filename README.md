@@ -15,7 +15,7 @@ This document details the process of integrating the BeachfrontBuilder SDK with 
 3. Add the BeachFrontBuilderSDK.embeddedFramework to your project and include BeachFrontBuilderSDK.framework in the "Link Binary with Libraries" panel in the project "Build Phases" section.
 4. Also add Foundation.framework, CoreGraphics.framework, MediaPlayer.framework and UIKit.framework by clicking on the + button in the "Link Binary With Libraries" panel.
 5. Make sure that the BeachFrontBuilderSDK.bundle is included in the "Copy Bundle Resources" panel.
-6. In your prefix header file App-prefix.pch, import the framework header.You can also just import the framework header wherever you need it, but we recommend you do it this way.
+6. In your prefix header file <PRODUCT-NAME>-prefix.pch, import the framework header.You can also just import the framework header wherever you need it, but we recommend you do it this way.
 
 ```
 #ifdef __OBJC__
