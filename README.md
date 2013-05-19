@@ -48,7 +48,7 @@ This document details the process of integrating the BeachfrontBuilder SDK with 
 
 ##Usage
 
-For a detailed documentation of BeachFrontBuilder iOS SDK please [visit nodemaker.github.io/BeachFrontBuilder-iOS-SDK](http://nodemaker.github.io/BeachFrontBuilder-iOS-SDK)
+For a detailed documentation of BeachFrontBuilder iOS SDK please visit [nodemaker.github.io/BeachFrontBuilder-iOS-SDK](http://nodemaker.github.io/BeachFrontBuilder-iOS-SDK)
 
 ##Documentation
 
