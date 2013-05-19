@@ -5,7 +5,7 @@ This document details the process of integrating the BeachfrontBuilder SDK with 
 :
 ## Requirements
 
-* BeachFrontBuild App Key & App Build ID - [Get it from here](http://beachfrontbuilder.com/signup)
+* BeachFrontBuilder App Key & App Build ID - [Get it from here](http://beachfrontbuilder.com/signup)
 * BeachFrontBuilder SDK EmbeddedFramework
 * Xcode 4.5 or higher
 
