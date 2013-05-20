@@ -27,10 +27,13 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        
         BFHomeViewController *masterViewController = [[BFHomeViewController alloc] initWithNibName:@"BFHomeViewController_iPhone" bundle:nil];
         self.navigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
         self.window.rootViewController = self.navigationController;
+        
     } else {
+        
         BFHomeViewController *masterViewController = [[BFHomeViewController alloc] initWithNibName:@"BFHomeViewController_iPad" bundle:nil];
         UINavigationController *masterNavigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
         
@@ -82,6 +85,7 @@
     [[UINavigationBar appearance] setTintColor:UIColorFromRGB(0x6944a1)];
     [[UISearchBar appearance] setTintColor:UIColorFromRGB(0x6944a1)];
 }
+
 
 
 @end

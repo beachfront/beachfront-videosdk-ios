@@ -16,7 +16,7 @@ This document details the process of integrating the BeachfrontBuilder SDK with 
 
 3. Add the BeachFrontBuilderSDK.embeddedFramework to your project and include BeachFrontBuilderSDK.framework in the "Link Binary with Libraries" panel in the project "Build Phases" section.
 
-4. Also add the following frameworks one by one by clicking on the + button in the "Link Binary With Libraries" panel.
+4. Also add the following frameworks and libraries one by one by clicking on the + button in the "Link Binary With Libraries" panel.
 ```
 	- Foundation.framework
 	- UIKit.framework
@@ -24,6 +24,7 @@ This document details the process of integrating the BeachfrontBuilder SDK with 
 	- MobileCoreServices.framework
 	- SystemConfiguration.framework
 	- QuartzCore.framework
+	- libxml2.dylib
 ```
 5. Make sure that the BeachFrontBuilderSDK.bundle is included in the "Copy Bundle Resources" panel.
 

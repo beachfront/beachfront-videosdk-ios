@@ -25,6 +25,7 @@
 		B664479B17494A6300524214 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B664479A17494A6300524214 /* SystemConfiguration.framework */; };
 		B664479D17494A6B00524214 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B664479C17494A6B00524214 /* MobileCoreServices.framework */; };
 		B664479F17494A7800524214 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B664479E17494A7800524214 /* QuartzCore.framework */; };
+		B66447E6174A63D100524214 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B66447E5174A63D100524214 /* libxml2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		B664479A17494A6300524214 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B664479C17494A6B00524214 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		B664479E17494A7800524214 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B66447E5174A63D100524214 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B66447E6174A63D100524214 /* libxml2.dylib in Frameworks */,
 				B664479F17494A7800524214 /* QuartzCore.framework in Frameworks */,
 				B664479D17494A6B00524214 /* MobileCoreServices.framework in Frameworks */,
 				B664479B17494A6300524214 /* SystemConfiguration.framework in Frameworks */,
@@ -75,6 +78,7 @@
 		B66447261749406C00524214 = {
 			isa = PBXGroup;
 			children = (
+				B66447E5174A63D100524214 /* libxml2.dylib */,
 				B66447381749406C00524214 /* BeachFrontBuilderSample */,
 				B66447311749406C00524214 /* Frameworks */,
 				B66447301749406C00524214 /* Products */,
@@ -364,6 +368,7 @@
 				B66447571749406C00524214 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

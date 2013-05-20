@@ -8,7 +8,7 @@
 
 #import "BFHomeViewController.h"
 
-@interface BFHomeViewController (){
+@interface BFHomeViewController ()<BFSearchDisplayDelegate>{
     BFSearchDisplayController* _searchController;
 }
 @property (nonatomic,strong) NSMutableArray* channels;
@@ -37,6 +37,7 @@
     [searchBar sizeToFit];
     _searchController = [[BFSearchDisplayController alloc] initWithSearchBar:searchBar
                                                           contentsController:self];
+    _searchController.searchDisplayDelegate = self;
     [self.tableView setTableHeaderView:searchBar];
     [self.tableView setContentOffset:CGPointMake(0,searchBar.bounds.size.height)];
     
@@ -118,5 +119,21 @@
     [self.detailViewController.navigationItem setLeftBarButtonItem:nil animated:YES];
     self.masterPopoverController = nil;
 }
+
+
+#pragma mark -
+#pragma mark BFSearchDisplayDelegate
+
+- (BOOL) searchDisplayController:(BFSearchDisplayController *)controller willPushViewController:(UIViewController*)viewController{
+    
+    if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad){
+        [self.detailViewController.navigationController pushViewController:viewController animated:YES];
+        [self.masterPopoverController dismissPopoverAnimated:YES];
+        return NO;
+    }else{
+        return YES;
+    }
+}
+
 
 @end
