@@ -17,8 +17,6 @@
 		B6644761174942BC00524214 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6644760174942BC00524214 /* Foundation.framework */; };
 		B6644763174942C400524214 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6644762174942C400524214 /* CoreGraphics.framework */; };
 		B6644765174942CA00524214 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6644764174942CA00524214 /* MediaPlayer.framework */; };
-		B6644798174949D200524214 /* BeachFrontBuilderSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6644795174949D200524214 /* BeachFrontBuilderSDK.framework */; };
-		B6644799174949D200524214 /* BeachFrontBuilderSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B6644797174949D200524214 /* BeachFrontBuilderSDK.bundle */; };
 		B664479B17494A6300524214 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B664479A17494A6300524214 /* SystemConfiguration.framework */; };
 		B664479D17494A6B00524214 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B664479C17494A6B00524214 /* MobileCoreServices.framework */; };
 		B664479F17494A7800524214 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B664479E17494A7800524214 /* QuartzCore.framework */; };
@@ -32,6 +30,9 @@
 		B66447F8174A69EF00524214 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B66447EF174A69EF00524214 /* Default-Portrait~ipad.png */; };
 		B66447F9174A69EF00524214 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B66447F0174A69EF00524214 /* Default.png */; };
 		B66447FA174A69EF00524214 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B66447F1174A69EF00524214 /* Default@2x.png */; };
+		B6644809174A82D400524214 /* BeachFrontBuilderSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6644806174A82D300524214 /* BeachFrontBuilderSDK.framework */; };
+		B664480A174A82D400524214 /* BeachFrontBuilderSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B6644808174A82D400524214 /* BeachFrontBuilderSDK.bundle */; };
+		B664480C174A836A00524214 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B664480B174A836A00524214 /* Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,8 +51,6 @@
 		B6644760174942BC00524214 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B6644762174942C400524214 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B6644764174942CA00524214 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		B6644795174949D200524214 /* BeachFrontBuilderSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BeachFrontBuilderSDK.framework; sourceTree = "<group>"; };
-		B6644797174949D200524214 /* BeachFrontBuilderSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BeachFrontBuilderSDK.bundle; sourceTree = "<group>"; };
 		B664479A17494A6300524214 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B664479C17494A6B00524214 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		B664479E17494A7800524214 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -65,6 +64,9 @@
 		B66447EF174A69EF00524214 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 		B66447F0174A69EF00524214 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		B66447F1174A69EF00524214 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B6644806174A82D300524214 /* BeachFrontBuilderSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BeachFrontBuilderSDK.framework; sourceTree = "<group>"; };
+		B6644808174A82D400524214 /* BeachFrontBuilderSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BeachFrontBuilderSDK.bundle; sourceTree = "<group>"; };
+		B664480B174A836A00524214 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +82,8 @@
 				B6644763174942C400524214 /* CoreGraphics.framework in Frameworks */,
 				B6644761174942BC00524214 /* Foundation.framework in Frameworks */,
 				B664475F174942B500524214 /* UIKit.framework in Frameworks */,
-				B6644798174949D200524214 /* BeachFrontBuilderSDK.framework in Frameworks */,
+				B6644809174A82D400524214 /* BeachFrontBuilderSDK.framework in Frameworks */,
+				B664480C174A836A00524214 /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +110,8 @@
 		B66447311749406C00524214 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B6644794174949D200524214 /* BeachFrontBuilderSDK.embeddedframework */,
+				B6644805174A82D300524214 /* BeachFrontBuilderSDK.embeddedframework */,
+				B664480B174A836A00524214 /* Social.framework */,
 				B664479E17494A7800524214 /* QuartzCore.framework */,
 				B664479C17494A6B00524214 /* MobileCoreServices.framework */,
 				B664479A17494A6300524214 /* SystemConfiguration.framework */,
@@ -147,24 +151,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B6644794174949D200524214 /* BeachFrontBuilderSDK.embeddedframework */ = {
-			isa = PBXGroup;
-			children = (
-				B6644795174949D200524214 /* BeachFrontBuilderSDK.framework */,
-				B6644796174949D200524214 /* Resources */,
-			);
-			name = BeachFrontBuilderSDK.embeddedframework;
-			path = ../BeachFrontBuilderSDK.embeddedframework;
-			sourceTree = "<group>";
-		};
-		B6644796174949D200524214 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				B6644797174949D200524214 /* BeachFrontBuilderSDK.bundle */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		B66447E7174A69EF00524214 /* Icon */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +172,24 @@
 				B66447F1174A69EF00524214 /* Default@2x.png */,
 			);
 			path = Splashscreen;
+			sourceTree = "<group>";
+		};
+		B6644805174A82D300524214 /* BeachFrontBuilderSDK.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				B6644806174A82D300524214 /* BeachFrontBuilderSDK.framework */,
+				B6644807174A82D400524214 /* Resources */,
+			);
+			name = BeachFrontBuilderSDK.embeddedframework;
+			path = ../BeachFrontBuilderSDK.embeddedframework;
+			sourceTree = "<group>";
+		};
+		B6644807174A82D400524214 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B6644808174A82D400524214 /* BeachFrontBuilderSDK.bundle */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,7 +247,6 @@
 				B664473D1749406C00524214 /* InfoPlist.strings in Resources */,
 				B664474F1749406C00524214 /* BFHomeViewController_iPhone.xib in Resources */,
 				B66447521749406C00524214 /* BFHomeViewController_iPad.xib in Resources */,
-				B6644799174949D200524214 /* BeachFrontBuilderSDK.bundle in Resources */,
 				B66447F2174A69EF00524214 /* Icon.png in Resources */,
 				B66447F3174A69EF00524214 /* Icon@2x.png in Resources */,
 				B66447F4174A69EF00524214 /* Default-568h@2x.png in Resources */,
@@ -253,6 +256,7 @@
 				B66447F8174A69EF00524214 /* Default-Portrait~ipad.png in Resources */,
 				B66447F9174A69EF00524214 /* Default.png in Resources */,
 				B66447FA174A69EF00524214 /* Default@2x.png in Resources */,
+				B664480A174A82D400524214 /* BeachFrontBuilderSDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

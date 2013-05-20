@@ -27,8 +27,8 @@
 #import <BeachFrontBuilderSDK/BFBuildInfo.h>
 
 //Managers
-#import <BFAnalyticsManager.h>
-#import <BFSharingManager.h>
+#import <BeachFrontBuilderSDK/BFAnalyticsManager.h>
+#import <BeachFrontBuilderSDK/BFSharingManager.h>
 
 //API Clients
 #import <BeachFrontBuilderSDK/BFAnalyticsClient.h>
