@@ -26,6 +26,10 @@
 #import <BeachFrontBuilderSDK/BFChannel.h>
 #import <BeachFrontBuilderSDK/BFBuildInfo.h>
 
+//Managers
+#import <BFAnalyticsManager.h>
+#import <BFSharingManager.h>
+
 //API Clients
 #import <BeachFrontBuilderSDK/BFAnalyticsClient.h>
 #import <BeachFrontBuilderSDK/BFBuilderClient.h>
@@ -43,6 +47,7 @@
 #import <BeachFrontBuilderSDK/BFActivityIndicatorView.h>
 
 //Extractors
+#import <BeachFrontBuilderSDK/BFVideoURLFetchOperation.h>
 #import <BeachFrontBuilderSDK/BFVideoURLExtractionOperation.h>
 #import <BeachFrontBuilderSDK/BFYoutubeExtractionOperation.h>
 #import <BeachFrontBuilderSDK/BFVimeoExtractionOperation.h>
