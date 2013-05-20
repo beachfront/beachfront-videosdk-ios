@@ -14,29 +14,29 @@
 
 - (id)initWithAppKey:(NSString *)appKey appBuildID:(NSString*)appBuildID;
 
-- (void)registerWithSuccess:(void (^)(NSString* analyticsID))success
+- (BF_AFHTTPRequestOperation*)registerWithSuccess:(void (^)(NSString* analyticsID))success
                     failure:(void (^)(NSError* error))failure;
 
-- (void)startSessionWithAnalyticsID:(NSString*)analyticsID
+- (BF_AFHTTPRequestOperation*)startSessionWithAnalyticsID:(NSString*)analyticsID
                             success:(void (^)(NSString* sessionID))success
                             failure:(void (^)(NSError* error))failure;
 
-- (void)endSessionWithSessionID:(NSString*)sessionID
+- (BF_AFHTTPRequestOperation*)endSessionWithSessionID:(NSString*)sessionID
                     analyticsID:(NSString*)analyticsID
                         success:(void (^)())success
                         failure:(void (^)(NSError* error))failure;
 
-- (void)registerUpdateWithAnalyticsID:(NSString*)analyticsIDs
+- (BF_AFHTTPRequestOperation*)registerUpdateWithAnalyticsID:(NSString*)analyticsIDs
                               success:(void (^)())success
                               failure:(void (^)(NSError* error))failure;
 
-- (void)videoPlayWithVideoID:(NSString*)videoID
+- (BF_AFHTTPRequestOperation*)videoPlayWithVideoID:(NSString*)videoID
                    sessionID:(NSString*)sessionID
                     analyticsID:(NSString*)analyticsID
                     success:(void (^)(NSString* videoPlayID))success
                     failure:(void (^)(NSError* error))failure;
 
-- (void)videoStopWithVideoPlayID:(NSString*)videoPlayID
+- (BF_AFHTTPRequestOperation*)videoStopWithVideoPlayID:(NSString*)videoPlayID
                          videoID:(NSString*)videoID
                      analyticsID:(NSString*)analyticsID
                          success:(void (^)())success

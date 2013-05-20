@@ -17,10 +17,6 @@
 #import<MobileCoreServices/MobileCoreServices.h>
 #import<SystemConfiguration/SystemConfiguration.h>
 
-//AFNetworking
-#import <BeachFrontBuilderSDK/BF_AFNetworking.h>
-#import <BeachFrontBuilderSDK/UIImageView+BF_AFNetworking.h>
-
 //Common
 #import <BeachFrontBuilderSDK/BFConstants.h>
 #import <BeachFrontBuilderSDK/BFCommon.h>
@@ -72,9 +68,10 @@ extern NSString* BeachFrontSDKAppKey;
 extern NSString* BeachFrontSDKAppBuildID;
 
 @interface BeachFrontBuilderSDK:NSObject
-/*
- * Call this method in your app delegate to initialize the SDK with an app key 
- * and app build ID.
+/*!
+ Initializes the SDK with the app-key and app-buildid that you have recieved from BeachFrontBuilder.
+ @param appKey The application key for your BeachFrontBuilder Application.
+ @param applicationId The application buildid for your BeachFrontBuilder Application.
  */
 + (void)startWithAppKey:(NSString *)appKey appBuildID:(NSString*)appBuildID;
 @end

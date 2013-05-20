@@ -11,6 +11,7 @@
 
 extern NSString* const BFVideoURLExtractionErrorDomain;
 extern NSInteger const BFVideoURLExtractionErrorInvalidSourceType;
+
 dispatch_queue_t extraction_operation_processing_queue();
 
 typedef enum {
@@ -20,8 +21,8 @@ typedef enum {
 } BFVideoQuality;
 
 @interface BFVideoURLExtractionOperation : BF_AFHTTPRequestOperation
-
-+ (instancetype)startExtractionOperationWithBFVideo:(BFVideo*)video quality:(BFVideoQuality)quality
++ (BF_AFHTTPRequestOperation*)startExtractionOperationWithBFVideo:(BFVideo*)video quality:(BFVideoQuality)quality
+                                              htmlData:(NSData*)htmlData
                                                success:(void (^)(NSURL* videoURL))success
                                                failure:(void (^)(NSError* error))failure;
 @end

@@ -21,34 +21,34 @@ typedef enum {
 
 - (id)initWithAppKey:(NSString *)appKey appBuildID:(NSString*)appBuildID;
 
-- (void)getVideoswithSuccess:(void (^)(NSArray* videos))success
+- (BF_AFHTTPRequestOperation*)getVideoswithSuccess:(void (^)(NSArray* videos))success
                      failure:(void (^)(NSError* error))failure;
 
-- (void)searchVideosWithQuery:(NSString *)query
+- (BF_AFHTTPRequestOperation*)searchVideosWithQuery:(NSString *)query
                       success:(void (^)(NSArray* videos))success
                       failure:(void (^)(NSError* error))failure;
 
-- (void)getVideoDetailsWithVideoID:(NSString *)videoID
+- (BF_AFHTTPRequestOperation*)getVideoDetailsWithVideoID:(NSString *)videoID
                            success:(void (^)(BFVideo* video))success
                            failure:(void (^)(NSError* error))failure;
 
-- (void)getChannelVideosWithChannelID:(NSString *)channelID
+- (BF_AFHTTPRequestOperation*)getChannelVideosWithChannelID:(NSString *)channelID
                                  page:(NSInteger)page
                               success:(void (^)(NSArray* videos))success
                               failure:(void (^)(NSError* error))failure;
     
-- (void)getChannelswithSuccess:(void (^)(NSArray* channels))success
+- (BF_AFHTTPRequestOperation*)getChannelswithSuccess:(void (^)(NSArray* channels))success
                        failure:(void (^)(NSError* error))failure;
 
-- (void)getBuildInfowithSuccess:(void (^)(BFBuildInfo* buildInfo))success
+- (BF_AFHTTPRequestOperation*)getBuildInfowithSuccess:(void (^)(BFBuildInfo* buildInfo))success
                         failure:(void (^)(NSError* error))failure;
 
-- (void)reportFailedVideoWithVideoID:(NSString*)videoID
+- (BF_AFHTTPRequestOperation*)reportFailedVideoWithVideoID:(NSString*)videoID
                               reason:(BFVideoFailureReason)reason
                              success:(void (^)())success
                              failure:(void (^)(NSError* error))failure;
 
-- (void)getVideoURLforVideo:(BFVideo*)video
-                    success:(void (^)(NSURL* videoURL))success
-                    failure:(void (^)(NSError* error))failure;
+- (NSMutableURLRequest*)getVideoURLGenerationRequestforVideo:(BFVideo*)video;
+- (NSMutableURLRequest*)getVideoURLFetchRequestforVideo:(BFVideo*)video htmlData:(NSData*)htmlData;
+
 @end

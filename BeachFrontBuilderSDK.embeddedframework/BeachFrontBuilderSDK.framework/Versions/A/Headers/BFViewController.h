@@ -9,6 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface BFViewController : UIViewController
+/*!
+ Shows or removes a loading spinner view
+ */
 -(void)showLoading:(BOOL)loading;
+/*!
+ Shows or removes an error message
+ */
 -(void)showError:(NSError*)error;
 @end

@@ -21,6 +21,7 @@
 @property (nonatomic,copy)   NSNumber*  views;
 @property (nonatomic,copy)   NSNumber*  likes;
 @property (nonatomic,copy)   NSString*  etc;
+@property (nonatomic,copy)   NSString*  remoteId;
 @property (nonatomic,copy)   NSString*  remoteStatus;
 @property (nonatomic,copy)   NSString*  sourceType;
 @property (nonatomic,copy)   NSNumber*  duration;

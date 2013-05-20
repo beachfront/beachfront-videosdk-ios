@@ -10,5 +10,8 @@
 #import <BeachFrontBuilderSDK/BeachFrontBuilderSDK.h>
 
 @interface BFVideoViewController : UIViewController
+/*!
+ The designated initializer that returns a freshly created BFVideoViewController object.
+ */
 -(id)initWithVideo:(BFVideo*)video;
 @end

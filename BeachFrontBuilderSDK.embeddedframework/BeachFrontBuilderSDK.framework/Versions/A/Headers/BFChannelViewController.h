@@ -11,7 +11,16 @@
 
 
 @interface BFChannelViewController : UICollectionViewController;
+
+/*!
+ Returns a freshly created BFChannelViewController for a particular
+ channel
+ */
 -(id)initAsMeFeediaChannel;
+/*!
+ The designated initializer that returns a freshly created BFChannelViewController for a particular
+ channel
+ */
 -(id)initWithChannel:(BFChannel *)channel;
 @property (nonatomic,strong) BFChannel* channel;
 @end
