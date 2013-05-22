@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <BeachFrontBuilderSDK/BeachFrontBuilderSDK.h>
 
-@interface BFVideoViewController : UIViewController
+@interface BFVideoViewController : BFViewController
 /*!
  The designated initializer that returns a freshly created BFVideoViewController object.
  */

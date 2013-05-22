@@ -8,6 +8,16 @@
 
 #import <BeachFrontBuilderSDK/BF_AFHTTPClient.h>
 
+extern NSString* const BFAnalyticsApiBaseURL;
+extern NSString* const BFAnalyticsApiCommonPath;
+extern NSString* const BFAnalyticsApiErrorDomain;
+extern NSInteger const BFAnalyticsApiError;
+extern NSInteger const BFAnalyticsApiErrorInvalidResponse;
+extern NSInteger const BFAnalyticsApiErrorInvalidAnalyticsID;
+extern NSInteger const BFAnalyticsApiErrorInvalidSessionID;
+extern NSInteger const BFAnalyticsApiErrorInvalidVideoID;
+extern NSInteger const BFAnalyticsApiErrorInvalidVideoPlayID;
+
 @interface BFAnalyticsClient : BF_AFHTTPClient
 
 + (BFAnalyticsClient *)sharedClient;

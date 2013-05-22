@@ -71,14 +71,6 @@ NSNumber* BFDecimalNumberFromString(NSString* string);
  */
 NSString* BFAutoDescriptionForObject(NSObject* object);
 /*!
- Creates a BFBuilder API Error object for a given description.
- */
-NSError*  BFAPIErrorWithDescription(NSString* description);
-/*!
- Creates a BF Analytics API Error object for a given description.
- */
-NSError*  BFAnalyticsAPIErrorWithDescription(NSString* description);
-/*!
  Creates and returns a u brand new unique identifier.
  */
 NSString* BFGetUUIDString();
@@ -102,3 +94,11 @@ NSString* BFRelativeTimeFromDate(NSDate* date);
  Takes in a time interval and returns it in the form of <hours>h<minutes> or <minutes>m<seconds>s Ex1h21m)
  */
 NSString* BFFormattedTimeFromTimeInterval(NSTimeInterval interval);
+/*!
+ Returns toolbar height for an orientation
+ */
+CGFloat BFToolbarHeightForOrientation(UIInterfaceOrientation orientation);
+/*!
+ Returns true for ipad
+ */
+BOOL BFIsPad();

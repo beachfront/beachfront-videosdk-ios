@@ -19,10 +19,10 @@
 /*!
  Show the facebook share dialog for a video.
  */
-- (void)showFacebookShareDialogForVideo:(BFVideo*)video fromViewController:(UIViewController*)viewController;
+- (BOOL)showFacebookShareDialogForVideo:(BFVideo*)video fromViewController:(UIViewController*)viewController;
 
 /*!
  Show the twitter share dialog for a video.
  */
-- (void)showTwitterShareDialogForVideo:(BFVideo*)video fromViewController:(UIViewController*)viewController;
+- (BOOL)showTwitterShareDialogForVideo:(BFVideo*)video fromViewController:(UIViewController*)viewController;
 @end

@@ -44,6 +44,7 @@
 //Views
 #import <BeachFrontBuilderSDK/BFVideoThumbnailView.h>
 #import <BeachFrontBuilderSDK/BFVideoCollectionViewCell.h>
+#import <BeachFrontBuilderSDK/BFActivityLabel.h>
 #import <BeachFrontBuilderSDK/BFActivityIndicatorView.h>
 
 //Extractors

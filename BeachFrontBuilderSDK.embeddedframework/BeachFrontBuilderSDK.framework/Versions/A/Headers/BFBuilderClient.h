@@ -10,6 +10,18 @@
 #import <BeachFrontBuilderSDK/BFVideo.h>
 #import <BeachFrontBuilderSDK/BFBuildInfo.h>
 
+extern NSString* const BFBuilderApiBaseURL;
+extern NSString* const BFBuilderApiCommonPath;
+extern NSString* const BFBuilderApiStatusSucess;
+extern NSInteger const BFBuilderAPIResultsPerPage;
+
+extern NSString* const BFBuilderApiErrorDomain;
+extern NSInteger const BFBuilderApiError;
+extern NSInteger const BFBuilderApiErrorAccessKey;
+extern NSInteger const BFBuilderApiErrorInvalidResponse;
+
+NSError* BFBuilderAPIErrorWithDescription(NSString* description,NSInteger errorCode);
+
 typedef enum {
     BFVideoFailureReasonFormatError,
     BFVideoFailureReasonURLNotFound,

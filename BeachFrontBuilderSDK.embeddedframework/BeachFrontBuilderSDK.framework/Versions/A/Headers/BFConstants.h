@@ -14,21 +14,4 @@
 #define BF_MONTH  (30.5 * BF_DAY)
 #define BF_YEAR   (365 * BF_DAY)
 
-//Builder API Constants
-extern NSString* const kBFApiBaseURL;
-extern NSString* const kBFApiCommonPath;
-extern NSString* const kBFApiStatusSucess;
-extern NSString* const kBFApiErrorDomain;
-extern NSInteger const kBFApiError;
-extern NSInteger const kBFApiErrorAccessKey;
-extern NSInteger const kBFAPIResultsPerPage;
-
-//Analytics API Constants
-extern NSString* const kBFAnalyticsApiBaseURL;
-extern NSString* const kBFAnalyticsApiCommonPath;
-extern NSString* const kBFAnalyticsApiErrorDomain;
-extern NSInteger const kBFAnalyticsApiError;
-
-//Bundle
 extern NSString* const kBeachFrontBuilderBundlePath;
-extern NSString* const kBeachFrontBuilderBundleName;

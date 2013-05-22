@@ -9,9 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <BeachFrontBuilderSDK/BeachFrontBuilderSDK.h>
 
-
-@interface BFChannelViewController : UICollectionViewController;
-
+@interface BFChannelViewController : BFViewController
 /*!
  Returns a freshly created BFChannelViewController for a particular
  channel
