@@ -83,6 +83,9 @@
 		</dict>
 		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:import</key>
 		<string>#import &lt;BeachFrontBuilderSDK/BeachFrontBuilderSDK.h&gt;
+		
+static NSString * const kBeachFrontBuilderAppKey = @&quot;&lt;# BeachFrontBuilder App Key #&gt;&quot;;
+static NSString * const kBeachFrontBuilderAppBuildID = @&quot;&lt;# BeachFrontBuilder App Build ID #&gt;&quot;;
 
 #import &quot;___VARIABLE_classPrefix:identifier___HomeViewController.h&quot;</string>
 		<key>Classes/Controllers/___VARIABLE_classPrefix:identifier___HomeViewController.m</key>
@@ -97,7 +100,7 @@
 didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
    //Initialize BeachFrontBuilderSDK
-    [BeachFrontBuilderSDK startWithAppKey:@&quot;5be86205-ebf8-4cd5-82cd-cf2a5a603be0&quot; appBuildID:@&quot;1&quot;];
+    [BeachFrontBuilderSDK startWithAppKey:kBeachFrontBuilderAppKey appBuildID:kBeachFrontBuilderAppBuildID];
  
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.

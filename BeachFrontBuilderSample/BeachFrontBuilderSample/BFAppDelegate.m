@@ -12,6 +12,9 @@
 //BeachFrontBuilderSDK
 #import <BeachFrontBuilderSDK/BeachFrontBuilderSDK.h>
 
+static NSString * const kBeachFrontBuilderAppKey = @"5be86205-ebf8-4cd5-82cd-cf2a5a603be0";
+static NSString * const kBeachFrontBuilderAppBuildID = @"1";
+
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 @implementation BFAppDelegate
@@ -19,7 +22,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     //Initialize BeachFrontBuilderSDK
-    [BeachFrontBuilderSDK startWithAppKey:@"5be86205-ebf8-4cd5-82cd-cf2a5a603be0" appBuildID:@"1"];
+    [BeachFrontBuilderSDK startWithAppKey:kBeachFrontBuilderAppKey appBuildID:kBeachFrontBuilderAppBuildID];
     
     //Style the UI
     [self styleUI];
