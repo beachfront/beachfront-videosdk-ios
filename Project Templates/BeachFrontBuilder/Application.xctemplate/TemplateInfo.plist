@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Nodes</key>
+	<array>
+		<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions</string>
+		<string>___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:navigationController</string>
+		<string>Classes/Controllers/___VARIABLE_classPrefix:identifier___HomeViewController.h</string>
+		<string>Classes/Controllers/___VARIABLE_classPrefix:identifier___HomeViewController.m</string>
+		<string>___VARIABLE_classPrefix:identifier___HomeViewController_iPad.xib</string>
+		<string>___VARIABLE_classPrefix:identifier___HomeViewController_iPhone.xib</string>
+		<string>BeachFrontBuilderSDK.bundle</string>
+		<string>BeachFrontBuilderSDK.framework</string>
+		<string>.gitignore</string>
+		<string>Default.png</string>
+		<string>Default@2x.png</string>
+		<string>Default-568h@2x.png</string>
+		<string>Default-Portrait~ipad.png</string>
+		<string>Default-Portrait@2x~ipad.png</string>
+		<string>Default-Landscape~ipad.png</string>
+		<string>Default-Landscape@2x~ipad.png</string>
+		<string>Icon.png</string>
+		<string>Icon@2x.png</string>
+	</array>
+	<key>Options</key>
+	<array/>
+	<key>SortOrder</key>
+	<integer>1</integer>
+	<key>Concrete</key>
+	<true/>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.cocoaTouchApplication</string>
+		<string>com.apple.dt.unit.objectiveCApplication</string>
+		<string>com.apple.dt.unit.iPhoneBase</string>
+		<string>com.apple.dt.unit.prefixable</string>
+	</array>
+	<key>Name</key>
+	<string>BeachFrontBuilder Application</string>
+	<key>Identifier</key>
+	<string>com.bfmedia.template.project.ios</string>
+	<key>Description</key>
+	<string>This template provides a starting point for an application using the BeachFrontBuilder SDK. A simple master-detail application is provided along with an Objective-C .gitignore file.</string>
+	<key>Definitions</key>
+	<dict>
+		<key>___VARIABLE_classPrefix:identifier___HomeViewController_iPad.xib</key>
+		<dict>
+			<key>Path</key>
+			<string>HomeViewController_iPad.xib</string>
+			<key>Group</key>
+			<string>Supporting Files</string>
+		</dict>
+		<key>___VARIABLE_classPrefix:identifier___HomeViewController_iPhone.xib</key>
+		<dict>
+			<key>Path</key>
+			<string>HomeViewController_iPhone.xib</string>
+			<key>Group</key>
+			<string>Supporting Files</string>
+		</dict>
+		<key>BeachFrontBuilderSDK.bundle</key>
+		<dict>
+			<key>Path</key>
+			<string>BeachFrontBuilderSDK.embeddedframework/Resources/BeachFrontBuilderSDK.bundle</string>
+			<key>Group</key>
+			<string>Supporting Files</string>
+		</dict>
+		<key>BeachFrontBuilderSDK.framework</key>
+		<dict>
+			<key>Path</key>
+			<string>BeachFrontBuilderSDK.embeddedframework/BeachfrontBuilderSDK.framework</string>
+			<key>Group</key>
+			<string>Supporting Files</string>
+		</dict>
+		<key>Classes/Controllers/___VARIABLE_classPrefix:identifier___HomeViewController.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Controllers</string>
+			<key>Path</key>
+			<string>HomeViewController.h</string>
+		</dict>
+		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:import</key>
+		<string>#import &lt;BeachFrontBuilderSDK/BeachFrontBuilderSDK.h&gt;
+
+#import &quot;___VARIABLE_classPrefix:identifier___HomeViewController.h&quot;</string>
+		<key>Classes/Controllers/___VARIABLE_classPrefix:identifier___HomeViewController.m</key>
+		<dict>
+			<key>Group</key>
+			<string>Controllers</string>
+			<key>Path</key>
+			<string>HomeViewController.m</string>
+		</dict>
+		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions</key>
+		<string>- (BOOL)application:(UIApplication *)application
+didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+   //Initialize BeachFrontBuilderSDK
+    [BeachFrontBuilderSDK startWithAppKey:@&quot;5be86205-ebf8-4cd5-82cd-cf2a5a603be0&quot; appBuildID:@&quot;1&quot;];
+ 
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // Override point for customization after application launch.
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        
+        ___VARIABLE_classPrefix:identifier___HomeViewController *masterViewController = [[___VARIABLE_classPrefix:identifier___HomeViewController alloc] initWithNibName:@&quot;___VARIABLE_classPrefix:identifier___HomeViewController_iPhone&quot; bundle:nil];
+        self.navigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
+        self.window.rootViewController = self.navigationController;
+        
+    } else {
+        
+        ___VARIABLE_classPrefix:identifier___HomeViewController *masterViewController = [[___VARIABLE_classPrefix:identifier___HomeViewController alloc] initWithNibName:@&quot;___VARIABLE_classPrefix:identifier___HomeViewController_iPad&quot; bundle:nil];
+        UINavigationController *masterNavigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
+        
+        BFChannelViewController *detailViewController = [[BFChannelViewController alloc] initAsMeFeediaChannel];
+        UINavigationController *detailNavigationController = [[UINavigationController alloc] initWithRootViewController:detailViewController];
+    	masterViewController.detailViewController = detailViewController;
+    	
+        self.splitViewController = [[UISplitViewController alloc] init];
+        self.splitViewController.delegate = masterViewController;
+        self.splitViewController.viewControllers = @[masterNavigationController, detailNavigationController];
+        
+        self.window.rootViewController = self.splitViewController;
+    }
+    [self.window makeKeyAndVisible];
+    return YES;
+   
+}</string>
+		<key>___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:navigationController</key>
+		<string>@property (strong, nonatomic) UINavigationController *navigationController;
+@property (strong, nonatomic) UISplitViewController *splitViewController;		</string>
+		<key>.gitignore</key>
+		<dict>
+			<key>Path</key>
+			<string>gitignore</string>
+		</dict>
+		<key>Default-568h@2x.png</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>Default-568h@2x.png</string>
+		</dict>
+		<key>Default.png</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>Default.png</string>
+		</dict>
+		<key>Default@2x.png</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>Default@2x.png</string>
+		</dict>
+		<key>Default-Portrait~ipad.png</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>Default-Portrait~ipad.png</string>
+		</dict>
+		<key>Default-Portrait@2x~ipad.png</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>Default-Portrait@2x~ipad.png</string>
+		</dict>
+		<key>Default-Landscape~ipad.png</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>Default-Landscape~ipad.png</string>
+		</dict>
+		<key>Default-Landscape@2x~ipad.png</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>Default-Landscape@2x~ipad.png</string>
+		</dict>
+		<key>Icon.png</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>Icon.png</string>
+		</dict>
+		<key>Icon@2x.png</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>Icon@2x.png</string>
+		</dict>
+	</dict>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>Frameworks</key>
+			<array>
+				<string>QuartzCore</string>
+				<string>Social</string>
+				<string>MediaPlayer</string>
+				<string>MobileCoreServices</string>
+				<string>SystemConfiguration</string>
+			</array>
+		</dict>
+	</array>
+	<key>Project</key>
+	<dict>
+		<key>SharedSettings</key>
+		<dict>
+			<key>ALWAYS_SEARCH_USER_PATHS</key>
+			<string>YES</string>
+			<key>OTHER_LDFLAGS</key>
+			<string>-ObjC -weak_library /usr/lib/libxml2.dylib</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

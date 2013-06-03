@@ -86,6 +86,4 @@
     [[UISearchBar appearance] setTintColor:UIColorFromRGB(0x6944a1)];
 }
 
-
-
 @end

@@ -90,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B647C418175C02AC000BABF5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B664474A1749406C00524214 /* BFHomeViewController.h */,
+				B664474B1749406C00524214 /* BFHomeViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		B66447261749406C00524214 = {
 			isa = PBXGroup;
 			children = (
@@ -129,8 +138,7 @@
 			children = (
 				B66447411749406C00524214 /* BFAppDelegate.h */,
 				B66447421749406C00524214 /* BFAppDelegate.m */,
-				B664474A1749406C00524214 /* BFHomeViewController.h */,
-				B664474B1749406C00524214 /* BFHomeViewController.m */,
+				B647C418175C02AC000BABF5 /* Controllers */,
 				B66447391749406C00524214 /* Supporting Files */,
 			);
 			path = BeachFrontBuilderSample;
