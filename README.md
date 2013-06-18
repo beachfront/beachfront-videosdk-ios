@@ -49,4 +49,4 @@ This document details the process of integrating the BeachfrontBuilder SDK with 
 }
 ```
 
-Have a bug? Please [create an issue on GitHub](https://github.com/nodemaker/BeachFrontBuilder-iOS-SDK/issues)!
+Have a bug? Please [create an issue on GitHub](https://github.com/beachfront/beachfront-videosdk-ios/issues)!
