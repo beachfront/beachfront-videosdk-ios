@@ -14,14 +14,16 @@ This document details the process of integrating the BeachfrontBuilder SDK with 
 
 2. Download the BeachFrontBuilder iOS SDK Embedded Framwork and copy it into your project Folder.
 
-3. Add the BeachFrontBuilderSDK.embeddedFramework to your project and include BeachFrontBuilderSDK.framework in the "Link Binary with Libraries" panel in the project "Build Phases" section.
+3. Add the BeachFrontBuilderSDK.embeddedFramework to your project and make sure BeachFrontBuilderSDK.framework is included in the "Link Binary with Libraries" panel in the project "Build Phases" section.
 
 4. Also add the following frameworks and libraries one by one by clicking on the + button in the "Link Binary With Libraries" panel.
 ```
 	- Foundation.framework
 	- UIKit.framework
 	- CoreGraphics.framework
+	- MediaPlayer.framework
 	- MobileCoreServices.framework
+	- Social.framework
 	- SystemConfiguration.framework
 	- QuartzCore.framework
 	- libxml2.dylib
@@ -46,13 +48,5 @@ This document details the process of integrating the BeachfrontBuilder SDK with 
     ..
 }
 ```
-
-##Usage
-
-For a detailed documentation of BeachFrontBuilder iOS SDK please visit [nodemaker.github.io/BeachFrontBuilder-iOS-SDK](http://nodemaker.github.io/BeachFrontBuilder-iOS-SDK)
-
-##Documentation
-
-You can access the detailed documentation for BeachFrontBuilderSDK at [nodemaker.github.io/BeachFrontBuilder-iOS-SDK](http://nodemaker.github.io/BeachFrontBuilder-iOS-SDK) 
 
 Have a bug? Please [create an issue on GitHub](https://github.com/nodemaker/BeachFrontBuilder-iOS-SDK/issues)!
